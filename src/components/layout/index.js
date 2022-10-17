@@ -1,4 +1,3 @@
-import React from 'react';
 import { Layout as Main, Tag } from 'antd';
 const { Header, Footer, Content } = Main;
 import styles from './index.module.scss';
