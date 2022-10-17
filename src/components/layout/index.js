@@ -11,12 +11,15 @@ function Layout({ children }) {
       </Header>
       <Content className={styles.content}>{children}</Content>
       <Footer className={styles.footer}>
-        <a href="#" className={styles.footer__tag}>
+        <a
+          href="https://github.com/tahaakbulut/task-tracker"
+          className={styles.footer__tag}
+        >
           <Tag color="#F1502F" icon={<DiGit size="1.2rem" />}></Tag>
           repository
         </a>
         <div className={styles.footer_copyright}>
-          <b>©</b>
+          <b>© 2022</b>
           <a
             href="https://github.com/tahaakbulut"
             className={styles.footer_copyright__link}
