@@ -1,6 +1,7 @@
 import { Button, Col, Form, Input, Row, Select } from 'antd';
 import { BsPlus } from 'react-icons/bs';
 import { PRIORITIES, useTasks } from '../../contexts/task-context';
+import styles from './index.module.scss';
 const { Option } = Select;
 
 const CreateTask = () => {
@@ -59,11 +60,11 @@ const CreateTask = () => {
           <Col xs={24} md={3}>
             <Form.Item>
               <Button
-                className="button-icon"
+                className={styles.create_button}
                 type="primary"
                 htmlType="submit"
                 block
-                icon={<BsPlus />}
+                icon={<BsPlus size="1.3rem" />}
               >
                 Create
               </Button>

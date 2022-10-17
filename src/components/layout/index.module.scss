@@ -1,3 +1,12 @@
+%gutter {
+  padding-left: 15px;
+  padding-right: 15px;
+  @media (min-width: 992px) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 header.header {
   display: flex;
   align-items: center;
@@ -6,15 +15,19 @@ header.header {
   font-weight: 500;
   border-bottom: 1px solid #f2f2f2;
   margin-bottom: 40px;
+  @extend %gutter;
 }
+
 .content {
-  padding-inline: 50px;
+  @extend %gutter;
 }
 .footer {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   color: gray;
+  @extend %gutter;
+
   &_copyright {
     margin-left: auto;
     display: flex;
